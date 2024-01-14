@@ -408,6 +408,9 @@ button:hover {
   .mainDetails .intro-text p {
     font-size: 13px;
   }
+  .project{
+  margin-bottom:30px;
+  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 709px) {
