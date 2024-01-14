@@ -262,6 +262,7 @@ body {
 .project {
   margin: 0 20px;
   text-align: left;
+  margin-bottom:30px;
 }
 
 .project img {
