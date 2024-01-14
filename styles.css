@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  color: #fff;
+  background-color: rgb(23, 28, 40);
+  font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+body {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.main-section {
+  margin-top: 20px;
+  height: auto;
+}
+
+.navbar {
+  background-color: transparent;
+  margin: 0 30px;
+  color: #fff;
+  z-index: 2;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: 100%;
+}
+
+.navbar-brand:hover {
+  color: #4caf50;
+  cursor: pointer;
+}
+
+.nav-link {
+  position: relative;
+  margin: 0 5px;
+}
+
+.nav-link:hover {
+  color: #4caf50;
+}
+
+.nav-link::before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #4caf50;
+  transition: width 0.6s ease;
+}
+
+.nav-link:hover::before {
+  color: #4caf50;
+  width: 100%;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='green' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mainDetails {
+  flex: 1;
+  border-radius: 12px;
+  /* background-color: #ffffff29; */
+  padding: 30px 0px;
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+  max-width: 500px;
+  transform: translateX(-100%);
+  animation: slide 1s ease-out forwards;
+}
+
+.mainDetails .intro-text p {
+  font-size: 16px;
+  text-align: left;
+}
+
+.mainDetails h1 {
+  font-size: 2.5rem;
+}
+
+.mainImg {
+  flex: 1;
+  text-align: center;
+  overflow: hidden;
+}
+
+.mainImg img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slide 1s ease-out forwards;
+}
+
+@keyframes slide {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#dynamic-text {
+  color: #4caf50;
+}
+
+.wrapper {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.bar {
+  color: #4caf50;
+}
+
+.btnColor {
+  color: #4caf50;
+}
+
+.contactLogos {
+  cursor: pointer;
+  max-width: 280px;
+}
+
+.contactLogos button i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.contactLogos button:hover i {
+  color: #4caf50;
+}
+
+/*----------------------------------------- Skills Section -----------------------------------*/
+
+.skills {
+  height: auto;
+  padding: 100px 0;
+}
+
+.skill-heading {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #ffffff29;
+  max-width: 350px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  height: 320px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.skill:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgb(103, 103, 103);
+}
+
+.skill-logo {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.skill-title {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #4caf50;
+}
+
+.languages-logos {
+  margin-bottom: 12px;
+}
+
+.languages-logos img {
+  height: 30px;
+}
+
+.skill-description {
+  text-align: left;
+  font-size: 14px;
+}
+
+.jQuery-logo {
+  width: 40px;
+}
+
+.react-logo {
+  height: 40px;
+}
+
+/*----------------------------------------- Projects Section -----------------------------------*/
+
+/* Add this to your existing styles */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.project-heading {
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.project {
+  margin: 0 20px;
+  text-align: left;
+}
+
+.project img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.github,
+.live-demo {
+  padding: 8px 15px;
+  font-size: 0.8em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.github {
+  background-color: #333;
+}
+
+.github a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.live-demo {
+  background-color: #4caf50;
+}
+
+.live-demo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*-------------------------------- Contact Me --------------------------------------*/
+
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-form {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 1em;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.rights-section {
+  margin-bottom: 30px;
+  height: 10vh;
+}
+
+.rights {
+  text-align: center;
+  font-size: 16px;
+}
+
+.rights-name {
+  color: #4caf50;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+}
+
+.mainDetails {
+  min-width: 350px;
+}
+
+.mainImg {
+  min-width: 250px;
+}
+
+/* Media query for mobile devices (max-width: 400px) */
+
+@media screen and (max-width: 400px) {
+  .nav-link:before :hover {
+    width: 20%;
+  }
+  .mainDetails h1 {
+    font-size: 1.7rem;
+  }
+  .mainDetails {
+    margin-top: 0;
+    order: 2;
+    flex: 0 0 100%;
+  }
+  .mainContainer {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .static-text,
+  #dynamic-text {
+    font-size: 1rem;
+  }
+  .mainDetails {
+    text-align: center;
+    background-color: #ffffff29;
+  }
+  .mainDetails .intro-text p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 709px) {
+  .mainDetails {
+    order: 2;
+    background-color: #ffffff29;
+  }
+  .mainContainer {
+    flex-wrap: wrap;
+  }
+}
+
+/* Media query for tablets (min-width: 786px and max-width: 1023px) */
+
+@media screen and (min-width: 790px) and (max-width: 1023px) {
+  .nav-link:before :hover {
+    width: 20%;
+  }
+  .mainDetails h1 {
+    font-size: 1.7rem;
+  }
+  .mainDetails {
+    margin-top: 0;
+    flex: 0 0 100%;
+  }
+  .mainContainer {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .static-text,
+  #dynamic-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 821px) and (max-width: 1000px) {
+}
+
+/* Media query for desktop/monitors (min-width: 1024px) */
+
+@media screen and (min-width: 1024px) {
+  .nav-link:hover::before {
+    width: 80%;
+  }
+}
