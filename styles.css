@@ -160,82 +160,60 @@ body {
 }
 
 /*----------------------------------------- Skills Section -----------------------------------*/
-
 .skills {
-  height: auto;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .skill-heading {
   text-align: center;
-  font-size: 38px;
-  margin-bottom: 30px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .skills-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.skill {
-  width: 100%;
-  margin-bottom: 20px;
-  max-width: 350px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15.5px);
-  -webkit-backdrop-filter: blur(15.5px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  margin: 0 auto;
-  border: none;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 10px;
-  height: 320px;
-  box-sizing: border-box;
-  margin-bottom: 30px;
-}
-
-.skill:hover {
-  cursor: pointer;
-  box-shadow: 2px 2px 8px rgb(103, 103, 103);
-}
-
-.skill-logo {
-  height: 50px;
-  width: 50px;
-  margin-bottom: 10px;
-}
-
-.skill-title {
-  text-align: left;
-  font-size: 20px;
-  margin-bottom: 12px;
-  color: #4caf50;
-}
-
-.languages-logos {
-  margin-bottom: 12px;
-}
-
-.languages-logos img {
-  height: 30px;
-}
-
 .skill-description {
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
+  max-width: 400px;
+  padding: 20px;
 }
 
-.jQuery-logo {
-  width: 40px;
+.skill-pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-.react-logo {
-  height: 40px;
+.skill-pictures img {
+  width: 70px;
+  height: 70px;
+  margin: 2px;
+}
+
+@media (min-width: 768px) {
+  .skill-description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skill-heading {
+    font-size: 28px;
+  }
+
+  .skill-description {
+    font-size: 20px;
+  }
 }
 
 /*----------------------------------------- Projects Section -----------------------------------*/
