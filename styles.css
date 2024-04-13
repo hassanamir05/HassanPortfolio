@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
 body {
   padding: 0;
   margin: 0;
@@ -9,22 +10,26 @@ body {
 }
 
 body::-webkit-scrollbar {
-  display: none;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: transparent;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
 }
 
-body {
-  overflow-y: scroll;
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .main-section {
   margin-top: 20px;
   height: auto;
+  height: 90vh;
 }
 
 .navbar {
@@ -75,7 +80,8 @@ body {
   color: #fff;
 }
 
-.mainContainer {
+.mainContainer,
+.skills-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,15 +91,22 @@ body {
   margin: 0 auto;
 }
 
-.mainDetails {
+.mainContainer {
+  margin-bottom: 100px;
+  margin-top: 50px;
+  padding: 30px auto;
+}
+
+.mainDetails,
+.skill-description {
   flex: 1;
   border-radius: 12px;
-  /* background-color: #ffffff29; */
   padding: 30px 0px;
   margin: 20px;
   padding: 20px;
   text-align: left;
   max-width: 500px;
+  min-width: 350px;
   transform: translateX(-100%);
   animation: slide 1s ease-out forwards;
 }
@@ -159,37 +172,23 @@ body {
   color: #4caf50;
 }
 
-/*----------------------------------------- Skills Section -----------------------------------*/
-
 .skills {
-  padding: 50px 0;
-}
-
-.skill-heading {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
+  padding: 50px 10px;
 }
 
 .skills-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  border: none;
-  max-width: 1200px;
-  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.skill-heading {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 20px;
 }
 
 .skill-description {
-  flex: 1;
-  border-radius: 12px;
-  margin-left: 50px;
-  padding: 20px;
-  text-align: left;
-  max-width: 400px;
-  transform: translateX(-100%);
-  animation: slide 1s ease-out forwards;
+  line-height: 30px;
 }
 
 .skill-pictures {
@@ -197,38 +196,17 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  transform: translateX(100%);
-  max-width: 400px;
   padding: 20px;
-  margin: 0 auto;
+  max-width: 500px;
+  min-width: 350px;
 }
 
 .skill-pictures img {
-  width: 70px;
-  height: 70px;
-  margin: 2px;
+  width: 60px;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
 }
-
-@media (min-width: 768px) {
-  .skill-description {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .skill-heading {
-    font-size: 28px;
-  }
-
-  .skill-description {
-    font-size: 20px;
-  }
-}
-
-
-/*----------------------------------------- Projects Section -----------------------------------*/
-
-/* Add this to your existing styles */
 
 .projects {
   display: flex;
@@ -303,8 +281,6 @@ body {
   color: #fff;
 }
 
-/*-------------------------------- Contact Me --------------------------------------*/
-
 .contact {
   max-width: 600px;
   margin: 0 auto;
@@ -372,8 +348,6 @@ button:hover {
   min-width: 250px;
 }
 
-/* Media query for mobile devices (max-width: 400px) */
-
 @media screen and (max-width: 400px) {
   .nav-link:before :hover {
     width: 20%;
@@ -381,7 +355,8 @@ button:hover {
   .mainDetails h1 {
     font-size: 1.7rem;
   }
-  .mainDetails {
+  .mainDetails,
+  .skill-description {
     margin-top: 0;
     order: 2;
     flex: 0 0 100%;
@@ -398,6 +373,12 @@ button:hover {
     text-align: center;
     background-color: #ffffff29;
   }
+  .skill-description {
+    text-align: center;
+    background-color: #ffffff29;
+    margin-left: 0;
+    margin-top: 20px;
+  }
   .mainDetails .intro-text p {
     font-size: 13px;
   }
@@ -411,12 +392,17 @@ button:hover {
     order: 2;
     background-color: #ffffff29;
   }
-  .mainContainer {
+  .mainContainer,
+  .skills-container {
     flex-wrap: wrap;
   }
-}
 
-/* Media query for tablets (min-width: 786px and max-width: 1023px) */
+  .skill-description {
+    order: 2;
+    background-color: #ffffff29;
+    font-size: 16px;
+  }
+}
 
 @media screen and (min-width: 790px) and (max-width: 1023px) {
   .nav-link:before :hover {
@@ -438,11 +424,6 @@ button:hover {
     font-size: 1rem;
   }
 }
-
-@media screen and (min-width: 821px) and (max-width: 1000px) {
-}
-
-/* Media query for desktop/monitors (min-width: 1024px) */
 
 @media screen and (min-width: 1024px) {
   .nav-link:hover::before {
