@@ -92,9 +92,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .mainContainer {
-  height:100vh;
-  margin-top: 50px;
-  padding: 30px auto;
+  height:100%;
+  padding:100x 0;
 }
 
 .mainDetails,
@@ -173,7 +172,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .skills {
-  padding: 50px 10px;
+  height:100%;
+  padding: 100px 0;
 }
 
 .skills-container {
