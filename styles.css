@@ -92,8 +92,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .mainContainer {
-  height:100%;
-  padding:100x 0;
+  height: 100%;
+  padding: 100x 0;
 }
 
 .mainDetails,
@@ -172,8 +172,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .skills {
-  height:100%;
   padding: 100px 0;
+  padding-bottom: 0;
 }
 
 .skills-container {
@@ -388,6 +388,10 @@ button:hover {
 }
 
 @media screen and (min-width: 401px) and (max-width: 709px) {
+  .main-section {
+    height: 100vh;
+    margin-bottom: 200px;
+  }
   .mainDetails {
     order: 2;
     background-color: #ffffff29;
@@ -412,7 +416,6 @@ button:hover {
     font-size: 1.7rem;
   }
   .mainDetails {
-    margin-top: 0;
     flex: 0 0 100%;
   }
   .mainContainer {
