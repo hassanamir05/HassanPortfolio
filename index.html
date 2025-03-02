@@ -1,216 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--Bootstrap CSS Link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-
-    <!--Bootstrap JavaScript Link-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <!--Font Awesome  Link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-    <!--Favicon Link-->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-
-    <!--CSS File Link-->
-    <link rel="stylesheet" href="styles.css" />
-
-    <title>Hassan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acitivty 1 - 221428</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
     <section class="main-section" id="home">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="Images/navbarImg.png" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-                <div class="collapse navbar-collapse btnColor" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
+                <a class="navbar-brand" href="#"><img src="Images/programming.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" id="navToggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
                         <a class="nav-link" href="#home">Home</a>
-                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#about">About</a>
                         <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#blog">Blog</a>
                         <a class="nav-link" href="#contact">Contact</a>
-                        <a class="nav-link" href="#">Resume</a>
                     </div>
                 </div>
             </div>
         </nav>
+
         <div class="mainContainer">
             <div class="mainDetails">
-                <h1>Hey I'm Hassan 👋</h1>
+                <h1>Hey I'm Muhammad Hassan Amir 👋</h1>
                 <div class="wrapper">
                     <div class="static-text">
-                        I'm <span id="dynamic-text"></span><span class="bar">|</span>
+                        I'm <span id="dynamic-text"></span><span class="bar">Full Stack Developer |</span>
                     </div>
                 </div>
                 <div class="intro-text">
                     <p>
-                        Fourth-semester student exploring diverse realms of computer science, from coding to cutting-edge technologies, with a commitment to creating impactful solutions and embracing the ever-evolving world of computer fields.
+                        A passionate web developer with expertise in creating responsive and user-friendly websites. 
+                        I specialize in front-end development and have a strong foundation in back-end technologies as well.
                     </p>
                 </div>
                 <div class="contactLogos">
                     <button class="btn mail-btn">
-              <a href="mailto:hassanamir0506@gmail.com" target="_blank"
-                ><i class="fa-solid fa-envelope"></i
-              ></a>
-            </button>
+                        <a href="mailto:john.doe@example.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </button>
                     <button class="btn github-btn">
-              <a
-                href="https://github.com/hassanamir05/hassanamir05"
-                target="_blank"
-              >
-                <i class="fa-brands fa-github"></i
-              ></a>
-            </button>
+                        <a href="https://github.com/" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </button>
+                    <button class="btn linkedin-btn">
+                        <a href="https://linkedin.com/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </button>
                     <button class="btn instagram-btn">
-              <a
-                href="https://www.linkedin.com/in/muhammadhassanamir/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </button>
-                    <button class="btn instagram-btn">
-              <a
-                href="https://www.instagram.com/hassan_amir05/"
-                target="_blank"
-              >
-                <i class="fa-brands fa-instagram"></i
-              ></a>
-            </button>
-                    <button class="btn instagram-btn">
-              <a href="https://twitter.com/Hassanamir0506" target="_blank">
-                <i class="fa-brands fa-x-twitter"></i
-              ></a>
-            </button>
+                        <a href="https://instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </button>
+                    <button class="btn twitter-btn">
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </button>
                 </div>
             </div>
             <div class="mainImg">
-                <img src="Images/codingAvatar.png " />
+                <img src="Images/codingAvatar.png" alt="Profile Image">
             </div>
         </div>
     </section>
+
+    <section class="about" id="about">
+        <h1 class="section-heading">About Me</h1>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="Images/codingAvatar.png" alt="About Me Image">
+            </div>
+            <div class="about-content">
+                <h3>Who am I?</h3>
+                <p>I'm a passionate web developer with 2+ years of experience creating modern and user-friendly websites. I specialize in front-end development and have a strong foundation in back-end technologies as well.</p>
+                
+                <h3>Education</h3>
+                <div class="education-item">
+                    <h4>Bachelor of Science in Computer Science</h4>
+                    <p>Air University Islamabad, 2022-2026</p>
+                </div>
+                
+                
+                <h3>Interests</h3>
+                <p>I enjoy coding and cubing (rubix cube).</p>
+                
+                <h3>Achievements</h3>
+                <ul class="achievements-list">
+                    <li>Runner up in WebAir 1.0 (Front end development Competiton)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <section class="skills" id="skills">
-      <h1 class="skill-heading">Skills</h1>
-      <div class="skills-container">
-        <div class="skill-description">
-          Experienced in a variety of programming languages and front-end web
-          development tools. Proficient in building dynamic and responsive web
-          applications. Skilled in creating engaging user interfaces. Committed
-          to staying updated with the latest industry trends and technologies.
+        <h1 class="skill-heading">Skills</h1>
+        <div class="skills-container">
+            <div class="skill-description">
+                Experienced in a variety of programming languages and front-end web development tools. Proficient in building dynamic and responsive web applications. Skilled in creating engaging user interfaces. Committed to staying updated with the latest industry trends and technologies.
+            </div>
+            <div class="skill-pictures">
+                <img src="https://skillicons.dev/icons?i=html" alt="HTML">
+                <img src="https://skillicons.dev/icons?i=css" alt="CSS">
+                <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap">
+                <img src="https://skillicons.dev/icons?i=jquery" alt="jQuery">
+                <img src="https://skillicons.dev/icons?i=react" alt="React">
+                <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS">
+                <img src="https://skillicons.dev/icons?i=materialui" alt="Material UI">
+                <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript">
+                <img src="https://skillicons.dev/icons?i=python" alt="Python">
+                <img src="https://skillicons.dev/icons?i=cpp" alt="C++">
+            </div>
         </div>
-        <div class="skill-pictures">
-          <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
-          <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
-          <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" />
-          <img src="https://skillicons.dev/icons?i=jquery" alt="jQuery" />
-            
-          <img src="https://skillicons.dev/icons?i=react" alt="React" />
-          <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" />
-          <img src="https://skillicons.dev/icons?i=materialui" alt="Material UI" />
-          <img
-            src="https://skillicons.dev/icons?i=javascript"
-            alt="JavaScript"
-          />
-          <img src="https://skillicons.dev/icons?i=python" alt="Python" />
-          <img src="https://skillicons.dev/icons?i=cpp" alt="C++" />
-        </div>
-      </div>
     </section>
+
     <section class="projects" id="projects">
-        <h1 class="project-heading">Projects</h1>
-        <div class="projects-container">
-            <div class="project">
-                <img src="Images/movie-website.png" alt="picture" />
-                <h1 class="title">Movie Landing Page</h1>
-                <div class="buttons-container">
-                    <button class="github">
-              <a href="https://github.com/hassanamir05/movie-website"
-                ><i class="fa-brands fa-github"></i> Github</a
-              >
-            </button>
-                    <button class="live-demo">
-              <a href="https://hassanamir05.github.io/movie-website/"
-                ><i class="fa-solid fa-link"></i> Live Demo</a
-              >
-            </button>
+      <h1 class="project-heading">Projects</h1>
+      <div class="projects-container">
+          <div class="project">
+              <img src="Images/movie-website.png" alt="picture" />
+              <h1 class="title">Movie Landing Page</h1>
+              <div class="buttons-container">
+                  <button class="github">
+            <a href="https://github.com/hassanamir05/movie-website"
+              ><i class="fa-brands fa-github"></i> Github</a
+            >
+          </button>
+                  <button class="live-demo">
+            <a href="https://hassanamir05.github.io/movie-website/"
+              ><i class="fa-solid fa-link"></i> Live Demo</a
+            >
+          </button>
+              </div>
+          </div>
+         
+          <div class="project">
+              <img src="rent-a-car-landing-page.png" alt="picture" />
+              <h1 class="title">Rent a Car Landing Page</h1>
+              <div class="buttons-container">
+                  <button class="github">
+            <a href="https://github.com/hassanamir05/Rent-a-Car"
+              ><i class="fa-brands fa-github"></i> Github</a
+            >
+          </button>
+                  <button class="live-demo">
+            <a
+              href="https://hassanamir05.github.io/Rent-a-Car/"
+              ><i class="fa-solid fa-link"></i> Live Demo</a
+            >
+          </button>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
+    <section class="blog" id="blog">
+        <h1 class="blog-heading">Blog & Testimonials</h1>
+        <div class="blog-container">
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/300x200" alt="Web Development Trends">
+                <h2>Web Development Trends in 2023</h2>
+                <p>Exploring the latest trends and technologies shaping the web development landscape this year.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            
+           
+            
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"Hassan created an amazing website for our business. His attention to detail and responsive design skills are exceptional. We've seen a significant increase in customer engagement since the launch."</p>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60" alt="Random Person">
+                        <div>
+                            <h4>Random Person</h4>
+                            <p>CEO, ABC Inc.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="project">
-                <img src="Images/Dashboard.png" alt="picture" />
-                <h1 class="title">Dashboard</h1>
-                <div class="buttons-container">
-                    <button class="github">
-              <a href="https://github.com/hassanamir05/Dashboard"
-                ><i class="fa-brands fa-github"></i> Github</a
-              >
-            </button>
-                    <button class="live-demo">
-              <a href="https://hassanamir05.github.io/Dashboard/"
-                ><i class="fa-solid fa-link"></i> Live Demo</a
-              >
-            </button>
+            
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"Working with Hassan was a pleasure. He understood our requirements perfectly and delivered a website that exceeded our expectations. His communication throughout the project was excellent."</p>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60" alt="Random Person">
+                        <div>
+                            <h4>Random Person</h4>
+                            <p>Marketing Director, ABC Solutions</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="project">
-                <img src="rent-a-car-landing-page.png" alt="picture" />
-                <h1 class="title">Rent a Car Landing Page</h1>
-                <div class="buttons-container">
-                    <button class="github">
-              <a href="https://github.com/hassanamir05/Rent-a-Car"
-                ><i class="fa-brands fa-github"></i> Github</a
-              >
-            </button>
-                    <button class="live-demo">
-              <a
-                href="https://hassanamir05.github.io/Rent-a-Car/"
-                ><i class="fa-solid fa-link"></i> Live Demo</a
-              >
-            </button>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
+
     <section class="contact" id="contact">
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/mrgnklpa"
-                  method="POST" method="post" class="contact-form">
+        <form action="#" method="post" class="contact-form">
             <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" required>
 
             <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" required>
 
             <label for="message">Your Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
             <button type="submit">Send Message</button>
         </form>
-        
     </section>
+
     <section class="rights-section">
         <h2 class="rights">
             All rights reserved
-            <span class="rights-name">@Hassan</span>
+            <span class="rights-name">Hassan</span>
         </h2>
     </section>
+
+    <script>
+        // Mobile navigation toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navbarNav').classList.toggle('show');
+        });
+
+
+    </script>
 </body>
-<!--JavaScript File Link-->
-<script src="app.js "></script>
-<script>
-    var themeToggle = document.getElementById("themeToggle ");
-    var body = document.body;
-
-    themeToggle.addEventListener("click ", function() {
-        body.classList.toggle("dark-theme ");
-    });
-</script>
-
 </html>
+
